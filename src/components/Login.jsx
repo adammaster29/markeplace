@@ -38,7 +38,7 @@ const Login = () => {
   useEffect(() => {
     if (isLoggedIn) {
       // Redirigir al componente de productos
-      navigate('/productos');
+      navigate('/');
     }
   }, [isLoggedIn, navigate]);
 
