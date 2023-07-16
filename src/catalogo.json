@@ -1,0 +1,13 @@
+[
+{"id":1,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
+{"id":2,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
+{"id":3,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
+{"id":4,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
+{"id":5,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
+{"id":6,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"}
+
+
+
+
+
+]
