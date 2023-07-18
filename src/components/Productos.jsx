@@ -41,7 +41,7 @@ const Productos = () => {
       {/* ******************productos********************** */}
       <div className="hijo__productos">
         <div className="productos__title">
-          <h2 className='title'>marketplace</h2>
+          <h1 className='title'>Shopping Adam</h1>
           <div className="buscador"> <input type="text" name="buscar" id="buscar" /> <i className='bx bx-search lupa'></i> </div>
         </div>
         <div className="productos__all">
@@ -50,7 +50,7 @@ const Productos = () => {
               <li><img src={producto.image.url} alt="" /></li>
               <li>{producto.nombre}</li>
               <li>$ {producto.precio}</li>
-              <li className='descripcion__producto'>{producto.descripcion} <i onClick={() => handleCompra(producto)} className='bx bxl-whatsapp whatsapp'></i></li>
+              <li className='descripcion__producto'>{producto.descripcion}   <span className='comprar' onClick={() => handleCompra(producto)}>Comprar</span> </li>
             </ul>
           ))}
         </div>
