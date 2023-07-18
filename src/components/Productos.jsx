@@ -10,14 +10,13 @@ const Productos = () => {
   };
 
   const [productos, setProductos] = useState([]);
-
   useEffect(() => {
     setProductos(catalogo);
   }, []);
 
   // ************************************comprar mediante WhatsApp********************
   const handleCompra = (producto) => {
-    const message = `¡Hola! Estoy interesado en comprar el producto ${producto.nombre} por un precio de ${producto.precio}.`;
+    const message = `¡Hola! Estoy interesado en comprar el producto,${producto.nombre} por un precio de ${producto.precio}. Descripcion ${producto.descripcion}`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappLink = `https://wa.me/573013803583?text=${encodedMessage}`;
@@ -30,18 +29,18 @@ const Productos = () => {
       {/* *****************navegacion************** */}
       <div className="navegacion__contenedor">
         <ul className="hijo__navbar-menu">
-          <li>{storedUsername && <p>User: {storedUsername}</p>}</li>
-          <li><span onClick={login}>Login</span></li>
-          <li><span>Categoria</span></li>
-          <li><span>Compras</span></li>
-          <li><span>Ventas</span></li>
+          <li><img className='menu__image-logo' src="/img/ADAM_SHOP.png" alt="" /></li>
+          <li className='name-nav'>{storedUsername && <p>User: {storedUsername}</p>}</li>
+          <li className='name-nav'><span onClick={login}>Login</span></li>
+          <li className='name-nav'><span>Categoria</span></li>
+          <li className='name-nav'><span>Compras</span></li>
         </ul>
       </div>
 
       {/* ******************productos********************** */}
       <div className="hijo__productos">
         <div className="productos__title">
-          <h1 className='title'>Shopping Adam</h1>
+          <h1 className='title'> Adam Shop</h1>
           <div className="buscador"> <input type="text" name="buscar" id="buscar" /> <i className='bx bx-search lupa'></i> </div>
         </div>
         <div className="productos__all">
@@ -49,7 +48,7 @@ const Productos = () => {
             <ul className='productos__map' key={producto.id}>
               <li><img src={producto.image.url} alt="" /></li>
               <li>{producto.nombre}</li>
-              <li>$ {producto.precio}</li>
+              <li className='productos__all-precio'>$ {producto.precio}</li>
               <li className='descripcion__producto'>{producto.descripcion}   <span className='comprar' onClick={() => handleCompra(producto)}>Comprar</span> </li>
             </ul>
           ))}
