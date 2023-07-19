@@ -1,16 +1,16 @@
 [
 {"id":1,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
-{"id":2,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
-{"id":3,"image":{ "url":"/img/reloj-diamante.jpg" },"nombre":"reloj diamante verde ","precio":100000,"descripcion":"reloj de diamantes con dorado en medio de la manija "},
+{"id":2,"image":{ "url":"/img/relo-dama-verde-blaze.jpg" },"nombre":"reloj dama verde","precio":75000,"descripcion":"reloj dama de pantalla verde con manija verde marino"},
+{"id":3,"image":{ "url":"/img/reloj-diamante.jpg" },"nombre":"reloj diamante  ","precio":100000,"descripcion":"reloj de diamantes con dorado en medio de la manija "},
 {"id":4,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
-{"id":5,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
-{"id":6,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
-{"id":7,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
-{"id":8,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
-{"id":9,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
-{"id":10,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"},
-{"id":11,"image":{ "url":"/img/rolex-azul.jpg" },"nombre":"reloj rolex azul","precio":80000,"descripcion":"reloj rolex de pantalla azul con manija brillante plata"},
-{"id":12,"image":{ "url":"/img/rolex-verde.jpg" },"nombre":"reloj rolex verde","precio":80000,"descripcion":"reloj rolex de pantalla verde con manija brillante plata"}
+{"id":5,"image":{ "url":"/img/reloj-binbond.jpg" },"nombre":"reloj dama pantalla azul oro","precio":90000,"descripcion":"reloj  de pantalla azul con manija brillante"},
+{"id":6,"image":{ "url":"/img/auriculares-inalambrico-ipods.jpg" },"nombre":"Auriculares ipods","precio":35000,"descripcion":"Auriculares inalambricos ipods amarillos"},
+{"id":7,"image":{ "url":"/img/reloj-dama-plateado.jpg" },"nombre":"reloj dama dorado plata","precio":70000,"descripcion":"reloj dama de pantalla roja y manija plata"},
+{"id":8,"image":{ "url":"/img/auricular-ipods-white.jpg" },"nombre":" auriculares ipods ","precio":35000,"descripcion":"auriculares inalambricos ipods blancos "},
+{"id":9,"image":{ "url":"/img/reloj-en resina.jpg" },"nombre":"reloj hombre azul","precio":77000,"descripcion":"reloj de hombre  azul con manija  azul de resina"},
+{"id":10,"image":{ "url":"/img/reloj-grant-cronografo-de-cuero.jpg" },"nombre":"reloj hombre de cuero","precio":65000,"descripcion":"reloj hombre grant cronografo de cuero"},
+{"id":11,"image":{ "url":"/img/auriculares-bluetooh.jpg" },"nombre":"auriculares negros","precio":40000,"descripcion":"Auriculares-bluetooh negros "},
+{"id":12,"image":{ "url":"/img/reloj-dama-tablero-verde.jpg" },"nombre":"reloj damas plata","precio":80000,"descripcion":"reloj dama tablero verde con diamantes emn manija"}
 
 
 
