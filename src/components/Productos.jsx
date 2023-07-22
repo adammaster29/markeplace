@@ -44,7 +44,7 @@ const Productos = () => {
       <div className="navegacion__contenedor">
         <ul className="hijo__navbar-menu">
           <img className='menu__image-logo' src="/img/ADAM_SHOP.png" alt="" />
-          <li className='name-nav'>{storedUsername && <p> {storedUsername}</p>}</li>
+          <li className='name-nav-user'>{storedUsername && <p> {storedUsername}</p>}</li>
           <li className='name-nav'><span onClick={login}>Login</span></li>
           <li className='name-nav'><span>Categoria</span></li>
           <li className='name-nav'><span>Compras</span></li>
@@ -78,7 +78,29 @@ const Productos = () => {
             </ul>
           ))}
         </div>
+        <footer>
+            <div className="contactos">
+              <p>Contactos</p>
+              <span className='contatcos__correo'>Adammaster29@gmail.com</span>
+              <span>
+                <i className="bx bxl-twitter"></i>
+                <i className="bx bxl-instagram"></i>
+                <i className="bx bxl-facebook"></i></span>
+            </div>
+            <div className="politicas">
+              <p>Politicas</p>
+              <span>Privacidad</span>
+              <span>Seguridad</span>
+              </div>
+            <div className="empresa">
+              <p>Empresa</p>
+              <span>About Us</span>
+              <span>Precios y Pagos</span>
+              </div>
+
+      </footer>
       </div>
+    
     </div>
   );
 };

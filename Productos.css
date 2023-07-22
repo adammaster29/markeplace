@@ -32,7 +32,18 @@ body {
 }
 .name-nav {
   color: white;
-  font-weight: 8000;
+  font-weight: 700;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+}
+.name-nav-user{
+  color: white;
+  text-shadow: 2px 2px 2px rgb(17, 202, 17), 2px 1px 2px rgb(162, 162, 177);
+  font-weight: 900;
+  font-size: 23px;
   width: 100%;
   height: 70px;
   display: flex;
@@ -129,4 +140,51 @@ li {
 }
 .productos__all-precio {
   color: green;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  /* padding: 0.5rem; */
+  /* gap: 2px; */
+  background: #f5f5fa;
+  margin-top: 1rem;
+}
+footer p{
+  font-size: 23px;
+  font-weight: 700;
+}
+.contactos,.politicas,.empresa{
+  width: 250px;
+  height: 150px;
+  text-align:center;
+  font-family:"roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contactos span{
+  font-weight: 800;
+  color: rgb(87, 84, 84);
+}
+.politicas  span{
+  font-weight: 800;
+  color: rgb(87, 84, 84);
+}
+.empresa  span{
+  font-weight: 800;
+  color: rgb(87, 84, 84);
+}
+.contactos i{
+font-size: 20px;
+}
+.bxl-twitter{
+  color: rgb(87, 87, 185);
+}
+.bxl-instagram{
+  color: orangered;
+}
+.bxl-facebook{
+  color: blue;
 }
