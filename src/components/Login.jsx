@@ -70,12 +70,12 @@ const Login = () => {
             <button type="submit">Registrarse</button>
           ) : (
             <>
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label htmlFor="checkbox">Recuérdame</label>
+              <input className='check' type="checkbox" name="checkbox" id="checkbox" />
+              <label className='check_label' htmlFor="checkbox">Recuérdame</label>
               <button type="submit">Iniciar Sesión</button>
             </>
           )}
-          <p onClick={handleToggleMode} className='login__registrarse'>
+          <p  onClick={handleToggleMode} className='login__registrarse '>
             {isRegistering ? '¿Ya tienes una cuenta? Inicia sesión' : '¿No tienes una cuenta? Regístrate'}
           </p>
         </div>

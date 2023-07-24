@@ -130,7 +130,6 @@ li {
   font-size: 20px;
   text-align: center;
   color: green;
-  border-radius: 8px;
   cursor: pointer;
 }
 .comprar:hover {
@@ -149,6 +148,7 @@ footer{
   /* padding: 0.5rem; */
   /* gap: 2px; */
   background: #f5f5fa;
+  /* background: var(--bg-fondo); */
   margin-top: 1rem;
 }
 footer p{
@@ -188,3 +188,6 @@ font-size: 20px;
 .bxl-facebook{
   color: blue;
 }
+
+
+/* ************************************************** */
