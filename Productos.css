@@ -97,6 +97,7 @@ input {
 .productos__map img {
   width: 100%;
   border-radius: 5px 5px 0 0;
+  opacity:var(--bg-img-card);
 }
 li {
   list-style: none;
@@ -104,16 +105,17 @@ li {
 /* ul */
 .productos__map {
   transition: transform 0.5s;
-  background: #fafafa;
+  background: var(--bg-card);
   width: 152px;
   height: 277px;
   font: 12px "Roboto", sans-serif 700;
-  color: inherit;
+  color: var(--texto);
+  text-shadow: 1px 1px 1px rgb(146, 146, 146);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  border: 0.5px solid #000;
+  border: 0.5px solid #8d8c8c;
   /* overflow:hidden ; */
 }
 .productos__map:hover {
@@ -147,7 +149,7 @@ footer{
   height: auto;
   /* padding: 0.5rem; */
   /* gap: 2px; */
-  background: #f5f5fa;
+  background:var(--bg-footer);
   /* background: var(--bg-fondo); */
   margin-top: 1rem;
 }
@@ -163,6 +165,7 @@ footer p{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--texto);
 }
 .contactos span{
   font-weight: 800;

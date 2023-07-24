@@ -4,10 +4,16 @@ box-sizing: border-box;}
 
 :root{
     --bg-fondo:white;
+    --bg-card:white;
+    --texto:rgb(32, 31, 31);
+    --bg-footer: #f5f5fa;
 }
 
 .dark-mode{
-    --bg-fondo:black;
+    --bg-fondo:rgba(0, 0, 0, 0.863);
+    --bg-card:rgba(8, 13, 56, 0.856);
+    --texto:rgb(253, 253, 253);
+    --bg-footer: rgba(8, 13, 56, 0.856);
 }
 
 .App{
