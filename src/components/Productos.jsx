@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import catalogo from '../catalogo.json';
 
-const Productos = ({modoNocturno,noche}) => {
+const Productos = ({ modoNocturno, noche }) => {
   const storedUsername = localStorage.getItem('username');
   const navigate = useNavigate();
   const login = () => {
@@ -38,30 +38,49 @@ const Productos = ({modoNocturno,noche}) => {
     setSearchTerm(e.target.value);
   };
   // **********************************modal tarjetas detalles************************
-  // const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  // const selectModal = () => {
-  //   setModal(true);
-  // };
-
+  const selectModal = () => {
+    setModal(!modal);
+  };
+  // **************************menu amburguesa*************************
+  const [amburguesa, setAmburguesa] = useState(false);
+  const menu = () => {
+    setAmburguesa(!amburguesa);
+  }
   return (
     <div className='padre__productos'>
       {/* *****************navegacion************** */}
-      <div className="navegacion__contenedor">
-        <ul className="hijo__navbar-menu">
-          <img className='menu__image-logo' src="/img/ADAM_SHOP.png" alt="" />
-          <li className='name-nav-user'>{storedUsername && <p> {storedUsername}</p>}</li>
-          <li onClick={login} className='name-nav'><span >Login</span></li>
-          <li className='name-nav'><span>Categoria</span></li>
-          <li onClick={noche} className='name-nav'><span>{modoNocturno?'claro':'oscuro'}</span></li>
-        </ul>
-      </div>
+      {amburguesa && (
+        <div className="navegacion__contenedor">
+          <ul className="hijo__navbar-menu">
+            <img className='menu__image-logo' src="/img/ADAM_SHOP.png" alt="" />
+            <li className='name-nav-user'>{storedUsername && <p> {storedUsername}</p>}</li>
+            <li onClick={login} className='name-nav'><span >Login</span></li>
+            <li onClick={selectModal} className='name-nav'><span>Categoria</span></li>
+            {modal && (
+              <ul className='modal'>
+                <li>tecnologias</li>
+                <li>ropas</li>
+                <li>zapatos</li>
+              </ul>
+            )
+
+            }
+
+
+            <li onClick={noche} className='name-nav'><span>{modoNocturno ? 'claro' : 'oscuro'}</span></li>
+          </ul>
+        </div>
+      )
+
+      }
 
       {/* ******************productos********************** */}
       <div className="hijo__productos">
         <div className="productos__title">
           <h1 className='title'> Adam Shop</h1>
-          <div className="buscador">
+         
             <input
               value={searchTerm}
               onChange={handleSearchTermChange}
@@ -70,57 +89,47 @@ const Productos = ({modoNocturno,noche}) => {
               id="buscar"
               placeholder='Buscar Productos'
             />
-
-          </div>
+            {/* <button onClick={menu} >menu</button> */}
+            <i  onClick={menu} class='bx bx-menu'></i>
+         
         </div>
         <div className="productos__all">
           {/* Usar la función buscar para filtrar los productos */}
           {buscar().map(producto => (
-            <ul  className='productos__map' key={producto.id}>
+            <ul className='productos__map' key={producto.id}>
               <li><img src={producto.image.url} alt="" /></li>
               <li>{producto.nombre}</li>
               <li className='productos__all-precio'>Cop. {producto.precio}</li>
               <li className='descripcion__producto'>{producto.descripcion}   <span className='comprar' onClick={() => handleCompra(producto)}>Comprar</span> </li>
-            {/* *********************modal************************* */}
-        {/* {modal && (
-          <div className="padre__modal">
-            <div className="hijo__modal">
-                    <div className='modal__productos-detalles'>
-                      <img className='img__detalles' src={producto.image?.url} alt="" />
-                    </div>
-              
-            </div>
-          </div>
-        )
+              {/* *********************modal************************* */}
 
-        } */}
             </ul>
           ))}
         </div>
-        
-        <footer>
-            <div className="contactos">
-              <p>Contactos</p>
-              <span className='contatcos__correo'>Adammaster29@gmail.com</span>
-              <span>
-                <i className="bx bxl-twitter"></i>
-                <i className="bx bxl-instagram"></i>
-                <i className="bx bxl-facebook"></i></span>
-            </div>
-            <div className="politicas">
-              <p>Politicas</p>
-              <span>Privacidad</span>
-              <span>Seguridad</span>
-              </div>
-            <div className="empresa">
-              <p>Empresa</p>
-              <span>About Us</span>
-              <span>Precios y Pagos</span>
-              </div>
 
-      </footer>
+        <footer>
+          <div className="contactos">
+            <p>Contactos</p>
+            <span className='contatcos__correo'>Adammaster29@gmail.com</span>
+            <span>
+              <i className="bx bxl-twitter"></i>
+              <i className="bx bxl-instagram"></i>
+              <i className="bx bxl-facebook"></i></span>
+          </div>
+          <div className="politicas">
+            <p>Politicas</p>
+            <span>Privacidad</span>
+            <span>Seguridad</span>
+          </div>
+          <div className="empresa">
+            <p>Empresa</p>
+            <span>About Us</span>
+            <span>Precios y Pagos</span>
+          </div>
+
+        </footer>
       </div>
-    
+
     </div>
   );
 };
