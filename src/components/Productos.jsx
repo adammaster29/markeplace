@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import catalogo from '../catalogo.json';
+import catalogo from "/catalogo.json"
 
 const Productos = ({ modoNocturno, noche }) => {
   const storedUsername = localStorage.getItem('username');
@@ -8,7 +8,10 @@ const Productos = ({ modoNocturno, noche }) => {
   const login = () => {
     navigate("/login");
   };
-
+  // const navigate = useNavigate();
+const detalles = (id) => {
+  navigate(`/producto/${id}`);
+};
   const [productos, setProductos] = useState([]);
   useEffect(() => {
     setProductos(catalogo);
@@ -48,6 +51,7 @@ const Productos = ({ modoNocturno, noche }) => {
   const menu = () => {
     setAmburguesa(!amburguesa);
   }
+
   return (
     <div className='padre__productos'>
       {/* *****************navegacion************** */}
@@ -96,7 +100,7 @@ const Productos = ({ modoNocturno, noche }) => {
         <div className="productos__all">
           {/* Usar la función buscar para filtrar los productos */}
           {buscar().map(producto => (
-            <ul className='productos__map' key={producto.id}>
+            <ul onClick={() => detalles(producto.id)} className='productos__map' key={producto.id}>
               <li><img src={producto.image.url} alt="" /></li>
               <li>{producto.nombre}</li>
               <li className='productos__all-precio'>Cop. {producto.precio}</li>
