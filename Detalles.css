@@ -1,0 +1,13 @@
+.detalles__producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    height: 100vj;
+}
+
+.detalles__img{
+    max-width: 400px;
+    max-height: 300px;
+}

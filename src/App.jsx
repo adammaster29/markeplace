@@ -7,6 +7,7 @@ import Detalles from './components/Detalles';
 import './App.css'
 import '../Productos.css'
 import '../Responsive.css'
+import '../Detalles.css'
 
 function App() {
   const [modoNocturno, setModoNocturno] = useState(false);
