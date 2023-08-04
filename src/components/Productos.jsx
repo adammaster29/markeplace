@@ -103,7 +103,7 @@ const detalles = (id) => {
             <ul onClick={() => detalles(producto.id)} className='productos__map' key={producto.id}>
               <li><img src={producto.image.url} alt="" /></li>
               <li>{producto.nombre}</li>
-              <li className='productos__all-precio'>Cop. {producto.precio}</li>
+              <li className='productos__all-precio'>Cop. {producto.precio}  <i class='bx bxs-plus-circle'></i> </li>
               <li className='descripcion__producto'>{producto.descripcion}   <span className='comprar' onClick={() => handleCompra(producto)}>Comprar</span> </li>
               {/* *********************modal************************* */}
 

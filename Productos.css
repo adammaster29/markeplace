@@ -109,7 +109,7 @@ li {
 .productos__map {
   transition: transform 0.5s;
   background: var(--bg-card);
-  width: 152px;
+  width: 130px;
   height: 277px;
   font: 12px "Roboto", sans-serif 700;
   color: var(--texto);
@@ -118,17 +118,19 @@ li {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  border: 0.5px solid #8d8c8c;
+  box-shadow: 2px 2px 2px 2px rgb(137, 137, 137);
   /* overflow:hidden ; */
 }
 .productos__map:hover {
   transform: scale(1.2);
-  box-shadow: 2px 2px 2px 2px rgb(137, 137, 137);
+   border: 0.5px solid #116140;
+   box-shadow: none;
 }
 
 .descripcion__producto {
   display: flex;
   flex-direction: column;
+  color: var(--texto);
 }
 
 .comprar {
@@ -144,16 +146,15 @@ li {
 }
 .productos__all-precio {
   color: green;
+  display: flex;
+  justify-content: space-evenly;
 }
 footer{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: auto;
-  /* padding: 0.5rem; */
-  /* gap: 2px; */
   background:var(--bg-footer);
-  /* background: var(--bg-fondo); */
   margin-top: 1rem;
 }
 footer p{
@@ -194,7 +195,13 @@ font-size: 20px;
 .bxl-facebook{
   color: blue;
 }
-
+.bxs-plus-circle{
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.bxs-plus-circle:hover{
+ transform: scale(1,2);
+}
 
 /* *************************modal************************* */
 .modal{
